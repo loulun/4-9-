@@ -14,9 +14,9 @@
       </div>
       <div class="nav">
       	<router-link to="/">首页</router-link> 
-        <router-link to="/about">全新楼盘</router-link> 
-        <router-link to="/three">二手楼盘</router-link> 
-        <router-link to="/quanxin">全新商铺</router-link> 
+        <router-link to="/about/1">全新楼盘</router-link> 
+        <router-link to="/about/2">二手楼盘</router-link> 
+        <router-link to="/about/3">全新商铺</router-link> 
         <router-link to="/dongtai">楼市动态</router-link> 
         <router-link to="/lianxi">联系我们</router-link>
       </div>

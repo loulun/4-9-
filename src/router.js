@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
+import Detail from './views/Detail.vue'
 import Three from './views/Three.vue'
 import Quanxin from './views/Quanxin.vue'
 import Dongtai from './views/Dongtai.vue'
@@ -16,9 +17,14 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
+      path: '/about/:fenlei',
       name: 'about',
       component: About
+    },
+    {
+      path: '/detail/:id',
+      name: 'detail',
+      component: Detail
     },
     {
       path: '/three',

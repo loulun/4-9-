@@ -2,15 +2,17 @@
 	<div class="home">
 		<Lunbo></Lunbo>
 		<div class="content">
-		<Tu></Tu>
-		<List></List>
-		<New></New>
-		<Lxwm></Lxwm>
-		<Form></Form>
-		<New2></New2>
-		<Address></Address>
-		<New3></New3>
-		
+			<Tu></Tu>
+			<List></List>
+			<New></New>
+			<Lxwm></Lxwm><Form></Form>
+
+			<New2></New2>
+			<Address></Address>
+
+			<New3></New3>
+			
+
 		</div>
 	</div>
 </template>
@@ -25,7 +27,7 @@
 	import Lxwm from '@/components/Lxwm.vue'
 	import Form from '@/components/Form.vue'
 	import Address from '@/components/Address.vue'
-	
+
 	export default {
 		name: 'home',
 		components: {
@@ -44,6 +46,19 @@
 				arr: []
 			}
 		},
+//		mounted() {
+//			this.$http.post("http://localhost:3001/lalal",{
+//					emulateJSON: true
+//				})
+//				.then(
+//					(response) => {
+//						console.log(response);
+//					},
+//					(error) => {
+//						console.log(error);
+//					}
+//				);
+//		},
 		methods: {
 
 		},
@@ -59,17 +74,20 @@
 		margin: 0;
 		padding: 0;
 	}
+	
 	.home {
 		width: 100%;
 		height: auto;
 		overflow: hidden;
 	}
+	
 	.content {
 		width: 88%;
 		margin: 0 auto;
 		margin-top: 50px;
 		background: red;
 	}
+	
 	.tu {
 		width: 65%;
 		float: left;
@@ -81,13 +99,16 @@
 		float: left;
 	}
 	
-	.tu #img2,#img4 {
+	.tu #img2,
+	#img4 {
 		margin-left: 2%;
 	}
 	
-	.tu #img3,#img4 {
+	.tu #img3,
+	#img4 {
 		margin-top: 13px;
 	}
+	
 	.new {
 		width: 68%;
 		float: left;
